@@ -1,0 +1,55 @@
+
+/** Our Client **/
+.Client {
+    padding-top: 90px;
+}
+.Client .Client_box:hover{
+    background-color: green;
+    top: -5px;
+    border: 5px solid darken;
+}
+.Client .title h2 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #191918;
+    padding: 20px 0px;
+    padding-bottom: 0px;
+}
+
+.Client .Client_box {
+    background: #212020;
+    border-radius: 20px;
+    text-align: center;
+    padding: 65px 50px;
+    padding: 50px;
+}
+
+.Client .Client_box h3 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 28px;
+    padding: 25px 0px;
+    padding-top: 32px;
+}
+
+.Client .Client_box p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.Client .Client_box i {
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.client-img{
+    height: 100px;
+    width: 100px;
+
+}
+
+/** end Our Client **/
+
