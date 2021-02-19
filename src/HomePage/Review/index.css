@@ -1,24 +1,18 @@
 
 /** Our Client **/
-.Client {
-    padding-top: 90px;
-}
-.Client .Client_box:hover{
-    background-color: green;
-    top: -5px;
-    border: 5px solid darken;
-}
+
+
 .Client .title h2 {
     font-size: 45px;
     font-weight: 500;
     line-height: 40px;
-    color: #191918;
+    color: #000;
     padding: 20px 0px;
     padding-bottom: 0px;
 }
 
 .Client .Client_box {
-    background: #212020;
+    background: #f2f2f2;
     border-radius: 20px;
     text-align: center;
     padding: 65px 50px;
@@ -26,7 +20,7 @@
 }
 
 .Client .Client_box h3 {
-    color: #fff;
+    color: #000;
     font-size: 30px;
     line-height: 28px;
     padding: 25px 0px;
@@ -34,7 +28,7 @@
 }
 
 .Client .Client_box p {
-    color: #fff;
+    color: #000;
     font-size: 17px;
     line-height: 28px;
     font-weight: 400;
@@ -53,3 +47,45 @@
 
 /** end Our Client **/
 
+.testimonial-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+    border:5px solid #50690f;
+    transition: all 0.3s ease-in-out;}
+.testimonial-container:hover {
+    box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+    top: -5px;}
+.testimonial-word {
+    padding: 0px 100px;}
+.testimonial-word h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 20px 0px;}
+.testimonial-word p {
+    line-height: 25px;
+    color: #000;
+}
+
+#testimonialx .swiper-button-next{
+    background-color: green !important;
+    right:25%;
+
+    border-radius: 10%;
+    color: #fff !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+#testimonialx .swiper-button-prev{
+    background-color: green !important;
+    right:10px;
+    left:25%;
+    border-radius: 10%;
+    color: #fff !important;
+    fill: black !important;
+    stroke: black !important;
+}

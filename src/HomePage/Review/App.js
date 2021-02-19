@@ -21,6 +21,7 @@ function App() {
     <div className="  bg-color-white color-white bg-fixed-1" >
       <br /><br />
       <h2 className="text-center color-3">Our Client</h2>
+      <div className="container" id="testimonialx">
       <div className="swiper">
 
         <Swiper
@@ -32,23 +33,28 @@ function App() {
    
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
+
         >
 
 
 
-          <SwiperSlide effect="fade">
+          <SwiperSlide >
 
             <div className="Client">
 
-              <div className="row">
+              
                 <div className="col-md-6 offset-md-3">
-                  <div className="Client_box">
+                  <div className="Client_box testimonial-container">
                     <img src={Picture} className="client-img" alt="#" />
-                    <h3>Roock Due</h3>
-                    <p> in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
-                    <i><img src={Logo} alt="#" /></i>
+                    <div className="testimonial-word color-11">
+
+                    <h2>Roock Due</h2>
+                    <p className="color-3">  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    
+                    </div><i><img src={Logo} alt="#" /></i>
+
                   </div>
-                </div>
+               
 
 
               </div>
@@ -57,87 +63,103 @@ function App() {
 
 
 
+          <SwiperSlide >
 
+            <div className="Client">
 
-  <SwiperSlide effect="fade">
+              
+                <div className="col-md-6 offset-md-3">
+                  <div className="Client_box testimonial-container">
+                    <img src={Picture} className="client-img" alt="#" />
+                    <div className="testimonial-word color-11">
 
-              <div className="Client">
-
-                <div className="row">
-                  <div className="col-md-6 offset-md-3">
-                    <div className="Client_box">
-                      <img src={Picture} className="client-img" alt="#" />
-                      <h3>Roock Due</h3>
-                      <p>T or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
-                      <i><img src={Logo} alt="#" /></i>
-                    </div>
-                  </div>
-
-                </div>
-              </div> <
-        /SwiperSlide>
-
-
-
-
-
-
-
-
-
-
-
-
-  <SwiperSlide effect="fade">
-
-                <div className="Client">
-
-                  <div className="row">
-                    <div className="col-md-6 offset-md-3">
-                      <div className="Client_box">
-                        <img src={Picture} className="client-img" alt="#" />
-                        <h3>Roock Due</h3>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
-                        <i><img src={Logo} alt="#" /></i>
-                      </div>
-                    </div>
+                    <h2>Roock Due</h2>
+                    <p className="color-3">  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    
+                    </div><i><img src={Logo} alt="#" /></i>
 
                   </div>
-                </div> <
+               
+
+
+              </div>
+            </div> <
         /SwiperSlide>
 
 
 
+          <SwiperSlide >
+
+            <div className="Client">
+
+              
+                <div className="col-md-6 offset-md-3">
+                  <div className="Client_box testimonial-container">
+                    <img src={Picture} className="client-img" alt="#" />
+                    <div className="testimonial-word color-11">
+
+                    <h2>Roock Due</h2>
+                    <p className="color-3">  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    
+                    </div><i><img src={Logo} alt="#" /></i>
+
+                  </div>
+               
 
 
-
-
-
-
-
-
-
-  <SwiperSlide effect="fade">
-
-                  <div className="Client">
-
-                    <div className="row">
-                      <div className="col-md-6 offset-md-3">
-                        <div className="Client_box">
-                          <img src={Picture} className="client-img" alt="#" />
-                          <h3>Roock Due</h3>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
-                          <i><img src={Logo} alt="#" /></i>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div> <
+              </div>
+            </div> <
         /SwiperSlide>
 
 
 
+          <SwiperSlide >
 
+            <div className="Client">
+
+              
+                <div className="col-md-6 offset-md-3">
+                  <div className="Client_box testimonial-container">
+                    <img src={Picture} className="client-img" alt="#" />
+                    <div className="testimonial-word color-11">
+
+                    <h2>Roock Due</h2>
+                    <p className="color-3">  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    
+                    </div><i><img src={Logo} alt="#" /></i>
+
+                  </div>
+               
+
+
+              </div>
+            </div> <
+        /SwiperSlide>
+
+
+
+          <SwiperSlide >
+
+            <div className="Client">
+
+              
+                <div className="col-md-6 offset-md-3">
+                  <div className="Client_box testimonial-container">
+                    <img src={Picture} className="client-img" alt="#" />
+                    <div className="testimonial-word color-11">
+
+                    <h2>Roock Due</h2>
+                    <p className="color-3">  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    
+                    </div><i><img src={Logo} alt="#" /></i>
+
+                  </div>
+               
+
+
+              </div>
+            </div> <
+        /SwiperSlide>
 
 
 
@@ -157,6 +179,7 @@ function App() {
         /Swiper>
         <
         /div>
+         </div>
         </div>
         </>
     );

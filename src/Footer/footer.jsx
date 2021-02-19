@@ -68,7 +68,67 @@ class Sidebar extends Component {
 <br />
     </div>
    
+<div className="social-contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 order-2 order-md-2 order-sm-2 order-lg-1">
+                  
 
+                    <div class="social-media-section">
+                        <h2>Follow us</h2>
+                        <div class="social-links">
+                        <a class="instagram bg-color-11" href="https://www.instagram.com/" data-tooltip="Instagram" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a class="facebook" href="https://www.facebook.com/" data-tooltip="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a class="instagram" href="https://www.instagram.com/" data-tooltip="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a class="instagram bg-color-11" href="https://www.instagram.com/" data-tooltip="Instagram" target="_blank"><i class="fa fa-github"></i></a>
+
+                        </div>
+                    </div>
+
+                
+
+                </div>
+                <div class="col-lg-8 col-md-12 order-1 order-md-1 order-sm-1 order-lg-2  mb-sm-50 mb-xs-50">
+                   
+                    <div class="contact-summery">
+                        <h2>Contact us</h2>
+
+
+                        <div class="contact-segments d-flex justify-content-between flex-wrap flex-lg-nowrap">
+
+
+                            <div class="single-contact d-flex mb-xs-20">
+                                <div class="icon">
+                                    <span class="icon-mobile"></span>
+                                </div>
+                                <div class="contact-info">
+                                    <p>Phone: <span>+36578</span></p>
+                                </div>
+                            </div>
+
+                   
+                            <div class="single-contact d-flex">
+                                <div class="icon">
+                                    <span class="icon-mail"></span>
+                                </div>
+                                <div class="contact-info">
+                                    <p>Email: <span>jikrulvai@gmail.com</span></p>
+                                </div>
+                            </div>
+
+           
+                        </div>
+
+                   
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
     <div className="footer-navigation-section mt-4">
         <div className="container">
         <br />
@@ -80,9 +140,9 @@ class Sidebar extends Component {
                         <h3 className="nav-section-title">PAGES</h3>
                         <ul>
                             <li> <a href="http://miloyres.herokuapp.com/">Home</a></li>
-                          <li><a href="http://miloyres.herokuapp.com/category/">Food 1</a></li>
-                          <li><a href="http://miloyres.herokuapp.com/category/">Food 2</a></li>
-                          <li><a href="http://miloyres.herokuapp.com/category/">Food 3</a></li>
+                          <li><a href="http://miloyres.herokuapp.com/category/">Page 1</a></li>
+                          <li><a href="http://miloyres.herokuapp.com/category/">Page 2</a></li>
+                          <li><a href="http://miloyres.herokuapp.com/category/">page 3</a></li>
                                                     </ul>
                     </div>
 

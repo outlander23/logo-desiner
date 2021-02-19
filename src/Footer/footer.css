@@ -2,28 +2,29 @@ footer {
   background-color: #ffffff; }
 
 /*----------  newsletter section  ----------*/
-.newsletter-section {
-  background-color: #008459;
-  margin-top: 50px;
-  color: #ffffff; }
-  .newsletter-section .newsletter-title h1 {
-    color: #ffffff;
-    font-size: 31px;
-    line-height: 42px;
-    margin-bottom: 0; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .newsletter-section .newsletter-title h1 {
-        font-size: 25px;
-        line-height: 30px; } }
 
-.subscription-form-wrapper p {
-  margin-bottom: 0;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%; }
-  @media only screen and (max-width: 479px) {
-    .subscription-form-wrapper p {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; } }
+
+.slider-btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.slider-btn:hover{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+}
 
 .subscription-form {
   position: relative;
@@ -63,6 +64,12 @@ footer {
     top: 50px; }
 
 /*----------  social contact section  ----------*/
+.social-contact-section{
+background-color:#000;
+color:#fff;
+padding: 15px;
+
+}
 .social-contact-section h2 {
   font-size: 31px;
   line-height: 42px;
@@ -186,13 +193,11 @@ footer {
   position: relative; }
   .footer-navigation-section:before {
     position: absolute;
-    top: 0;
-    left: 27%;
-    width: 73%;
-    height: 1px;
+
+
     background-color: #e0e0e0;
     content: "";
-    margin-left: -13.5%; }
+ }
     @media only screen and (min-width: 1200px) and (max-width: 1499px) {
       .footer-navigation-section:before {
         width: 100%;
@@ -297,28 +302,6 @@ footer {
 
 
 
-
-
-#myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-
-.subc{
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
-}
-
-.subch{
-    align-items: center;
-    text-align: center;
-}
 
 
 

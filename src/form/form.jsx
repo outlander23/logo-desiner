@@ -68,7 +68,7 @@ class Form extends Component {
         return (<button
             disabled={this.validate()}
             onClick={this.handleSubmit}
-            className="btn btn-primary btn-lg">
+            className="slider-btn  ">
             {label}
         </button>);
     };
