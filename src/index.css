@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: url('./fonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.color-dark{
+  color: black;
+}
+.bg-color-dark{
+  background: black;
+}

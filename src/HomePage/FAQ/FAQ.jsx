@@ -9,16 +9,16 @@ class FAQ extends Component {
         return (
 
 
-            <div class="resip_section faqs bg-color-13">
+            <div class="faqs ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
-                            <div class="faqs-img">
-                                <img src={Logo} alt="Image"/>
+                        <div class="col-md-5 ">
+                            <div class="faqs-img bg-color-white">
+                                <div class="icon-question"> </div>
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <div class="section-header color-white">
+                            <div class="section-header ">
                                 <h2>Have A Questions?</h2>
                             </div>
                             <div id="accordion ">

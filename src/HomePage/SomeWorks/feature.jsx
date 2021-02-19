@@ -21,7 +21,7 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 function FeaturesSlides() {
 
     return (
-        <section class="resip_section bg-color-12">
+        <section class="resip_section bg-color-dark">
             <div class="container">
 
                 <div class="col-md-12">

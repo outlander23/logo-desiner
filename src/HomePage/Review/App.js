@@ -18,9 +18,9 @@ function App() {
 
   return ( <
             >
-    <div className=" resip_section bg-color-15 color-white" >
+    <div className="  bg-color-white color-white bg-fixed-1" >
       <br /><br />
-      <h2 className="text-center ">Our Client</h2>
+      <h2 className="text-center color-3">Our Client</h2>
       <div className="swiper">
 
         <Swiper
@@ -45,7 +45,7 @@ function App() {
                   <div className="Client_box">
                     <img src={Picture} className="client-img" alt="#" />
                     <h3>Roock Due</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    <p> in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
                     <i><img src={Logo} alt="#" /></i>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ function App() {
                     <div className="Client_box">
                       <img src={Picture} className="client-img" alt="#" />
                       <h3>Roock Due</h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                      <p>T or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
                       <i><img src={Logo} alt="#" /></i>
                     </div>
                   </div>
