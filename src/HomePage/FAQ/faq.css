@@ -1,118 +1,117 @@
 .faqs {
-    position: relative;
-    width: 100%;
-    padding: 45px 45px;
+  position: relative;
+  width: 100%;
+  padding: 45px 45px;
 }
 
 .faqs .faqs-img {
-    position: relative;
-    height: 100%;
- 
+  position: relative;
+  height: 100%;
 
-    border-radius: 20%;
+  border-radius: 20%;
 }
 
 .faqs .faqs-img div {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    font-size: 20rem;
-    padding-top: 30%
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-size: 20rem;
+  padding-top: 30%;
+  color:#892cdc;
 }
 
-@media(max-width: 767.98px) {
-    .faqs .faqs-img {
-        margin-bottom: 30px;
-        height: auto;
-    }
+@media (max-width: 767.98px) {
+  .faqs .faqs-img {
+    margin-bottom: 30px;
+    height: auto;
+  }
 }
 
 .faqs .card {
-    margin-bottom: 15px;
-    padding: 15px 15px 15px 15px;
-    border: none;
-    border-radius: 0;
-    border-top: 1px solid #aa9166;
-    border-radius: -10%;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 15px;
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid #892cdc;
+  border-radius: -10%;
 }
 
 .faqs .card:last-child {
-    margin-bottom: 0;
-    padding: 15px 15px 15px 15px;
-    border-bottom: 1px solid #aa9166;
-    
+  margin-bottom: 0;
+  padding: 15px 15px 15px 15px;
+  border-bottom: 1px solid #892cdc;
 }
 
 .faqs .card-header {
-    padding: 0;
-    border: none;
-    background: #ffffff;
+  padding: 0;
+  border: none;
+  background: #ffffff;
 }
 
 .faqs .card-header a {
-    display: block;
-    width: 100%;
-    color: #121518;
-    font-size: 18px;
-    line-height: 40px;
+  display: block;
+  width: 100%;
+  color: #121518;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .faqs .card-header a span {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    text-align: center;
-    background: #121518;
-    color: #aa9166;
-    font-weight: 700;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
 }
 
 .faqs .card-header [data-toggle="collapse"]:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f067";
-    float: right;
-    color: #121518;
-    font-size: 12px;
-    font-weight: 900;
-    transition: .3s;
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  float: right;
+  color: #121518;
+  font-size: 12px;
+  font-weight: 900;
+  transition: 0.3s;
 }
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f068";
-    float: right;
-    color: #121518;
-    font-size: 12px;
-    font-weight: 900;
-    transition: .3s;
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  float: right;
+  color: #121518;
+  font-size: 12px;
+  font-weight: 900;
+  transition: 0.3s;
 }
 
 .faqs .card-body {
-    padding: 15px 0 0 0;
-    font-size: 16px;
-    border: none;
-    background: #ffffff;
-    border-radius: 10%;
-    padding: 10px;
+  padding: 15px 0 0 0;
+  font-size: 16px;
+  border: none;
+  background: #ffffff;
+  border-radius: 10%;
+  padding: 10px;
 }
 
 .faqs a.btn {
-    position: relative;
-    margin-top: 15px;
-    padding: 15px 35px;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #aa9166;
-    border: 2px solid #aa9166;
-    border-radius: 0;
-    background: #121518;
-    transition: .3s;
+  position: relative;
+  margin-top: 15px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #892cdc;
+  border-radius: 0;
+  background: #121518;
+  transition: 0.3s;
 }
 
 .faqs a.btn:hover {
-    color: #121518;
-    background: #aa9166;
+  color: #000;
+  background: #fff;
 }

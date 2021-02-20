@@ -1,0 +1,51 @@
+.services-section {
+  background-color: #F9F9F9;
+}
+
+
+.services-section hr {
+  
+  width: 42px;
+  margin: 0 auto;
+}
+
+
+.services-section:hover {
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+    top: -5px;
+}
+
+.services-section .sp-circle i {
+   font-size: 42px;
+   margin-top: 88px;
+   display: inline-block;
+   vertical-align: middle;
+}
+.font-50{
+  font-size: 100px;
+}
+
+.img-container {
+  width: 100%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 5px; /* if you want space between the images */
+}
+.starts{
+  background: green;
+  border-radius: 2px;
+  margin: 2px;
+  display: inline;
+  font-size: 10px;
+  color:white;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+
+}
+.details{
+  background: #999323;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: left;
+
+}

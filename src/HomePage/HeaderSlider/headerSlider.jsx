@@ -1,14 +1,10 @@
-
 import Slider from "./slider";
-import  "./responsive.css";
+import "./responsive.css";
 function Navbar() {
   return (
-
-
-            <div class="slider_section">
-              <Slider />
-            </div>
-
+    <div class="slider_section">
+      <Slider />
+    </div>
   );
 }
 
