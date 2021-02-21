@@ -8,13 +8,20 @@
   width: 42px;
   margin: 0 auto;
 }
-
-
-.services-section:hover {
-    border-bottom-right-radius: 4px;
-    box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-    top: -5px;
+#box144{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: dark;
 }
+
+.box-14{
+  border:2px solid #892cdc;
+  text-align: left;
+  padding: 10px;
+  background: #eee;
+
+}
+
 
 .services-section .sp-circle i {
    font-size: 42px;

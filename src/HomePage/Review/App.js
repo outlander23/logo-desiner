@@ -24,7 +24,7 @@ function App() {
       <div className="  bg-color-white color-white bg-fixed-1">
         <br />
         <br />
-        <h2 className="text-center color-3">Our Client</h2>
+        <h2 className="text-center color-3 uppercase">Our Client</h2><br />
         <div className="container" id="testimonialx">
           <div className="swiper">
             <Swiper
@@ -146,6 +146,7 @@ function App() {
           </div>
         </div>
       </div>
+      <br /><br />
     </>
   );
 }

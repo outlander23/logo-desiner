@@ -1,0 +1,90 @@
+.main_content{
+    margin-top: 50px;
+}
+.un-container {
+    padding-left: 5.2083%;
+    padding-right: 5.2083%;
+}
+
+
+.support {
+    padding: 100px 0;
+}
+.main_content .title .txt1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #253238;
+    text-align: center;
+}
+.main_content .title .txt2 {
+    font-weight: 100;
+    font-size: 12px;
+
+    margin-top: 0;
+    color: #253238;
+    text-align: center;
+}
+
+
+.main_content .title p {
+    font-size: 15px;
+    color: #717577;
+    margin: 0;
+}
+
+.support .contact_now {
+    display: inline-block;
+    line-height: 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background: #eb3d32;
+    color: #fff;
+    padding: 0 30px;
+    margin: 30px 0 0;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 14px;
+}
+.support .contact_now:hover {
+   
+
+    background: #eb0d02;
+  
+}
+
+
+.iteam-support h4 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+}
+.iteam-support p {
+    font-size: 1.2rem;
+}
+
+.support .box-support .iteam-support {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.support .box-support {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto;
+}
+.iteam-support span{
+	font-size: 50px;
+	color:#14cfff;
+	margin-bottom: 40px;
+	
+
+}
+.support .box-support .iteam-support span {
+	margin-bottom: 20px;
+
+}
+
+.support .box-support .iteam-support:nth-child(3) {
+	grid-column: 1/3;
+}

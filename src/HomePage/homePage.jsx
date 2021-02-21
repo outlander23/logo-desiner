@@ -6,7 +6,9 @@ import Review from "./Review/App";
 import FAQ from "./FAQ/FAQ";
 import BgFix from "./FixBg/fixed";
 import News from "./Newsletter/Newsletter";
-import Service from "./services"
+import Service from "./services";
+import Tech from "./tech/tech";
+import Sttt from "./Start/start"
 function HomePage(argument) {
   return (
     <>
@@ -14,11 +16,14 @@ function HomePage(argument) {
       <FeaturesSlides />
 
       <Service />
-      
+       <Sttt />
+      <Tech/ >
       <FAQ />
       <BgFix />
       <Review />
+     
       <News />
+      
     </>
   );
 }

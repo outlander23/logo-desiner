@@ -568,3 +568,8 @@ span {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+.newsletter-section {
+    background-color: #000;
+    margin-top: 0px;
+    color: #ffffff;
+}

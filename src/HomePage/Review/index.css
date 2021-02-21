@@ -39,11 +39,12 @@
 
 .testimonial-container {
   padding: 30px;
-  background-color: #fff;
+  background-color: #f5f5f5;
   border-radius: 4px;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   border: 5px solid #882bdb;
   transition: all 0.3s ease-in-out;
+
 }
 .testimonial-container:hover {
   box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
