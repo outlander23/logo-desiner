@@ -1,86 +1,54 @@
-/** Our Client **/
-
-.Client .title h2 {
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 40px;
-  color: #000;
-  padding: 20px 0px;
-  padding-bottom: 0px;
+#testimonial{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.font-weight-lighter{
+  font-weight: 100;
+}
+.box-review
+{
+width: 350px; 
 }
 
-.Client .Client_box {
-  background: #fff;
-  border-radius: 20px;
-  text-align: center;
-  padding: 65px 50px;
-  padding: 50px;
+.ratting-color{
+  color:#bc6ff1;
+}
+.testimonial-single {
+  display: block;
+  position: relative;
+}
+.p-4 {
+  padding: 1.5rem !important;
+}.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
 }
 
-
-.Client .Client_box p {
-  color: #000;
-  font-size: 17px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
-.Client .Client_box i {
-  padding-top: 20px;
-  display: inline-block;
-}
-
-.client-img {
-  height: 100px;
-  width: 100px;
-}
-
-/** end Our Client **/
-
-.testimonial-container {
-  padding: 30px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
-  border: 5px solid #882bdb;
-  transition: all 0.3s ease-in-out;
-
-}
-.testimonial-container:hover {
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
-}
-.testimonial-word {
-  width: 30vw;
-}
-.testimonial-word h2 {
-  font-size: 12px;
-  text-transform: uppercase;
+#testimonial .testimonial-heading {
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
   font-weight: 700;
-  letter-spacing: 4px;
-  margin: 20px 0px;
 }
-.testimonial-word p {
-  line-height: 25px;
-  color: #892cdc;
+.rounded {
+  border-radius: .25rem !important;
+}
+.item {
+
+    width: 350px;
+    margin-right: 30px;
+
+}
+#testimonial .swiper-button-next {
+
+  right: -10%;
+
+
 }
 
-#testimonialx .swiper-button-next {
-  background-color: #892cdc !important;
-  right: 25%;
+#testimonial .swiper-button-prev {
 
-  border-radius: 10%;
-  color: #fff !important;
-  fill: black !important;
-  stroke: black !important;
-}
+  left: -10%;
 
-#testimonialx .swiper-button-prev {
-  background-color: #892cdc !important;
-  right: 10px;
-  left: 25%;
-  border-radius: 10%;
-  color: #fff !important;
-  fill: black !important;
-  stroke: black !important;
+
 }

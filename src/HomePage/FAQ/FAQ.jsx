@@ -16,22 +16,22 @@ class FAQ extends Component {
   render() {
 
     return (
-        <div class="faqs ">
+        <div class="faqs gray-light-bg">
           <div class="container">
-            <div class="row">
-              <div class="col-md-5 ">
-                <div class="faqs-img bg-color-white">
-                  <div class="icon-question"/>
-                </div>
-              </div>
-              <div class="col-md-7">
+
+
+       
+        
                 <div class="section-header ">
                   <h2>Frequently asked questions?</h2>
                 </div>
-                <div id="accordion ">
+                <div className="row"  id="accordion ">
 
                   {[...this.state.faqs.entries()].map(([index, faq]) =>
-                      <div key={index} class="card">
+                      <div key={index} class=" col-lg-6 col-sm-6 col-xs-6">
+                      <div className="card">
+
+
                         <div class="card-header">
                           <a class="card-link"
                              data-toggle="collapse"
@@ -47,15 +47,16 @@ class FAQ extends Component {
                           <div class="card-body">{faq.answer}</div>
                         </div>
                       </div>
+                         </div>
                   )}
 
 
                 </div>
                 <a class="btn" href="">Have more questions?</a>
-              </div>
+      
             </div>
           </div>
-        </div>
+
     );
   }
 }

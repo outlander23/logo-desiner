@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
+<div class="box-review" >
+    <div class="item">
+        <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
+            <blockquote>
+                {review.message}
+            </blockquote>
+            <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                <div class="d-flex align-items-center">
+                    <img  alt={review.name} class="img-fluid rounded-circle shadow-sm mr-3" src={review.image} width="50"/>
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+                        <div class="client-info">
+                            <h5 class="mb-0">
+                                {review.name}
+                            </h5>
+                        </div>
+                    </img>
+                </div>
+                <div class="client-ratting">
+                    <ul class="list-inline client-ratting-list">
+                        <li class="list-inline-item">
+                            <span class="fas fa-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="fas fa-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="fas fa-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="fas fa-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="fas fa-star ratting-color">
+                            </span>
+                        </li>
+                    </ul>
+                    <span class="font-weight-bold">
+                        5.0
+                        <small class="font-weight-lighter">
+                            Out of 5
+                        </small>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

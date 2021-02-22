@@ -1,3 +1,20 @@
+
+
+.gray-light-bg {
+  background: #f6f6f6;
+}
+.ptb-100 {
+  padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+
 .faqs {
   position: relative;
   width: 100%;
@@ -30,17 +47,13 @@
 .faqs .card {
   margin-bottom: 15px;
   padding: 15px 15px 15px 15px;
+  margin-right: 2px;
   border: none;
   border-radius: 0;
-  border-top: 1px solid #892cdc;
+
   border-radius: -10%;
 }
 
-.faqs .card:last-child {
-  margin-bottom: 0;
-  padding: 15px 15px 15px 15px;
-  border-bottom: 1px solid #892cdc;
-}
 
 .faqs .card-header {
   padding: 0;
@@ -114,4 +127,8 @@
 .faqs a.btn:hover {
   color: #000;
   background: #fff;
+}
+
+.faqs .section-header{
+  padding-bottom: 20px;
 }

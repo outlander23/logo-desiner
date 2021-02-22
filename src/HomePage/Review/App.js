@@ -34,45 +34,81 @@ function App() {
 
   return (
       <React.Fragment>
-        <div className="  bg-color-white color-white bg-fixed-1">
-          <br/>
-          <br/>
-          <h2 className="text-center color-3 uppercase">Our Client</h2><br/>
-          <div className="container" id="testimonialx">
-            <div className="swiper">
+
+      <div className="container" id="testimonial">
+
+          <h2 className="testimonial-heading">What Clients Say About Me</h2>
+
+
               <Swiper
                   spaceBetween={50}
-                  slidesPerView={1}
+                  slidesPerView={3}
                   navigation
+                  loop={{loop:true}}
                   autoplay={{delay: 3000}}
                   pagination={{clickable: true}}
               >
 
                 {[...reviews.entries()].map(([index, review]) =>
                     <SwiperSlide key={index}>
-                      <div className="Client">
-                        <div className="col-md-6 offset-md-3">
-                          <div className="Client_box testimonial-container">
-                            <img src={review.image} height="10px" className="client-img" alt={review.name} />
-                            <div className="testimonial-word color-11">
-                              <h2>{review.name}</h2>
-                              <p className="color-3">{review.message}</p>
-                            </div>
-                            <i>
-                              <img src={Logo} alt="#"/>
-                            </i>
-                          </div>
+                      <div class="box-review" >
+    <div class="item">
+        <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
+            <blockquote>
+                {review.message}
+            </blockquote>
+            <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                <div class="d-flex align-items-center">
+                    <img  alt={review.name} class="img-fluid rounded-circle shadow-sm mr-3" src={review.image} width="50"/>
+
+                        <div class="client-info">
+                            <h5 class="mb-0">
+                                {review.name}
+                            </h5>
                         </div>
-                      </div>
+                    
+                </div>
+                <div class="client-ratting">
+                    <ul class="list-inline client-ratting-list">
+                        <li class="list-inline-item">
+                            <span class="icon-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="icon-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="icon-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="icon-star ratting-color">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="icon-star ratting-color">
+                            </span>
+                        </li>
+                    </ul>
+                    <span class="font-weight-bold">
+                        5.0 
+                        <small class="font-weight-lighter">
+                             Out of 5
+                        </small>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                       {" "}
                     </SwiperSlide>
                 )}
                 <br/> <br/>
               </Swiper>
-            </div>
-          </div>
-        </div>
-        <br/><br/>
+
+      </div>
       </React.Fragment>
   );
 }

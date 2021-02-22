@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
         <div className="main_content">
-          {/*This section is for live chat*/}
+          {/*This section is for live chat
           <div className="form-popup" id="myForm">
             <form action="/action_page.php" className="form-container">
               <h1>Login</h1>
@@ -21,6 +21,7 @@ class App extends Component {
                   <button type="submit" className="btn cancel" onClick="closeForm()">Close</button>
             </form>
           </div>
+          */}
 
           <div className="un-container">
 
