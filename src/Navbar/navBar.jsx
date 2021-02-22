@@ -1,8 +1,21 @@
 import React, { Component } from "react";
-import Navlist from "./navList";
+import NavList from "./navList";
+import http from "../form/httpService";
+import {apiRoot} from "../constants";
 
 class Navbar extends Component {
+  state = {
+    bars: []
+  }
+
+  async componentDidMount() {
+    let res = await http.get(apiRoot + '/site-data/navBars/');
+    this.setState({bars: res.data.data});
+  }
+
+
   render() {
+    const {bars} = this.state;
     return (
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark " id="navbar">
@@ -25,10 +38,8 @@ class Navbar extends Component {
             </button>
             <div className="collapse navbar-collapse " id="navbarsExample09">
               <ul className="navbar-nav ml-auto ">
-                <Navlist label="Home" link="home" />
-                <Navlist label="About" link="about" />
-                <Navlist label="Works" link="work" />
-        
+                {[...bars.entries()].map(([index, bar]) => <NavList key={index}
+                                                                    label={bar.label} link={bar.link} />)}
               </ul>
             </div>
           </div>

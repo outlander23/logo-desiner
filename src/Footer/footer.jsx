@@ -1,13 +1,26 @@
-import React, { Component } from "react";
+import React, {useEffect, useState} from "react";
 import "./footer.css";
 import Register from "../form/registerFrom";
+import http from "../form/httpService";
+import {apiRoot} from "../constants";
 
-class Sidebar extends Component {
-  render() {
-    return (
+const Sidebar = () => {
+  const [aboutMe, setaboutMe] = useState({});
+
+  useEffect(() => {
+    const getUrl = async () => {
+      let res = await http.get(apiRoot + '/site-data/about_me/');
+      setaboutMe(res.data.data);
+    }
+    getUrl();
+  });
+
+  const {email, phone, address} = aboutMe;
+
+  return (
       <footer>
-        <div className=" bg-color-3 color-white ">
-          <br />
+        {email && <div className=" bg-color-3 color-white ">
+          <br/>
           <div className="container ">
             <div className="container mt-4 mb-4">
               <div className="row">
@@ -21,7 +34,7 @@ class Sidebar extends Component {
 
                 <div className="col-md-7 mb-5 mb-md-0">
                   <form action="" className="site-form">
-                    <Register />
+                    <Register/>
                   </form>
                 </div>
                 <div className="col-md-5 pl-md-5">
@@ -31,96 +44,95 @@ class Sidebar extends Component {
                       <h4>
                         <span className="text-uppercase color">Email</span>
                       </h4>
-                      smmiloyrahman@gmail.com
+                      <p>{email}</p>
                     </li>
 
                     <li>
                       <h4>
                         <span className="text-uppercase ">Address</span>
                       </h4>
-                      Talukdar Mas<br></br>
-                      Park-mor ,Rangpur city <br></br>
-                      Rangpur, Bangladesh
+                      <div dangerouslySetInnerHTML={{__html: address}}/>
                     </li>
                     <li>
                       <h4>
                         <span className="text-uppercase ">Phone</span>
                       </h4>
-                      +1234567899
+                      {phone}
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <br />
+          <br/>
         </div>
+        }
 
         <div className="social-contact-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-12 order-2 order-md-2 order-sm-2 order-lg-1">
-                <div class="social-media-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 col-md-12 order-2 order-md-2 order-sm-2 order-lg-1">
+                <div className="social-media-section">
                   <h2>Follow us</h2>
-                  <div class="social-links">
+                  <div className="social-links">
                     <a
-                      class="instagram bg-color-11"
-                      href="https://www.instagram.com/"
-                      data-tooltip="Instagram"
-                      target="_blank"
+                        className="instagram bg-color-11"
+                        href="https://www.instagram.com/"
+                        data-tooltip="Instagram"
+                        target="_blank"
                     >
-                      <i class="fa fa-youtube"></i>
+                      <i className="fa fa-youtube"/>
                     </a>
                     <a
-                      class="facebook"
-                      href="https://www.facebook.com/"
-                      data-tooltip="Facebook"
-                      target="_blank"
+                        className="facebook"
+                        href="https://www.facebook.com/"
+                        data-tooltip="Facebook"
+                        target="_blank"
                     >
-                      <i class="fa fa-facebook"></i>
+                      <i className="fa fa-facebook"/>
                     </a>
                     <a
-                      class="instagram"
-                      href="https://www.instagram.com/"
-                      data-tooltip="Instagram"
-                      target="_blank"
+                        className="instagram"
+                        href="https://www.instagram.com/"
+                        data-tooltip="Instagram"
+                        target="_blank"
                     >
-                      <i class="fa fa-instagram"></i>
+                      <i className="fa fa-instagram"/>
                     </a>
                     <a
-                      class="instagram bg-color-11"
-                      href="https://www.instagram.com/"
-                      data-tooltip="Instagram"
-                      target="_blank"
+                        className="instagram bg-color-11"
+                        href="https://www.instagram.com/"
+                        data-tooltip="Instagram"
+                        target="_blank"
                     >
-                      <i class="fa fa-github"></i>
+                      <i className="fa fa-github"/>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8 col-md-12 order-1 order-md-1 order-sm-1 order-lg-2  mb-sm-50 mb-xs-50">
-                <div class="contact-summery">
+              <div className="col-lg-8 col-md-12 order-1 order-md-1 order-sm-1 order-lg-2  mb-sm-50 mb-xs-50">
+                <div className="contact-summery">
                   <h2>Contact us</h2>
 
-                  <div class="contact-segments d-flex justify-content-between flex-wrap flex-lg-nowrap">
-                    <div class="single-contact d-flex mb-xs-20">
-                      <div class="icon">
-                        <span class="icon-mobile"></span>
+                  <div className="contact-segments d-flex justify-content-between flex-wrap flex-lg-nowrap">
+                    <div className="single-contact d-flex mb-xs-20">
+                      <div className="icon">
+                        <span className="icon-mobile"/>
                       </div>
-                      <div class="contact-info">
+                      <div className="contact-info">
                         <p>
-                          Phone: <span>+36578</span>
+                          Phone: <span>{phone}</span>
                         </p>
                       </div>
                     </div>
 
-                    <div class="single-contact d-flex">
-                      <div class="icon">
-                        <span class="icon-mail"></span>
+                    <div className="single-contact d-flex">
+                      <div className="icon">
+                        <span className="icon-mail"/>
                       </div>
-                      <div class="contact-info">
+                      <div className="contact-info">
                         <p>
-                          Email: <span>jikrulvai@gmail.com</span>
+                          Email: <span>{email}</span>
                         </p>
                       </div>
                     </div>
@@ -132,7 +144,7 @@ class Sidebar extends Component {
         </div>
         <div className="footer-navigation-section mt-4">
           <div className="container">
-            <br />
+            <br/>
             <div className="row">
               <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb-xs-30">
                 <div className="single-navigation-section">
@@ -227,7 +239,7 @@ class Sidebar extends Component {
               </div>
             </div>
           </div>
-          <br />
+          <br/>
         </div>
 
         <div className="copyright-section pt-35 pb-35 mt-2">
@@ -245,7 +257,8 @@ class Sidebar extends Component {
           </div>
         </div>
       </footer>
-    );
-  }
+  );
 }
+
+
 export default Sidebar;
