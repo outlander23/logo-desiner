@@ -6,7 +6,7 @@ import Footer from "./Footer/footer";
 import About from "./About/About";
 import Work from "./Work/work"
 import "./App.css";
-
+import "./Css/main-respondive.css"
 
 class App extends Component {
     render() {

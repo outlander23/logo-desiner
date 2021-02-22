@@ -32,7 +32,7 @@ const News = () => {
 
             <div class="col-lg-8 col-md-12 col-sm-12">
               <div class="subscription-form-wrapper d-flex flex-wrap flex-sm-nowrap">
-                <p class="mb-xs-20">
+                <p class="mb-xs-20" id="small-20">
                   Sign up for our newsletter to receive updates and Exclusive
                   offers
                 </p>

@@ -17,22 +17,18 @@ class Service extends Component {
   render() {
     const features = [...this.state.features.entries()];
     return (
-        <section id="section-feature">
-          <div className="section-heading-styles _mPS2id-t">
-            <div className="list-header">
-              <div className="un-container text-center">
+        <section id="section-feature ">
+     
+     <div className="container">
 
-                <div className="title" id="start-id">
-                  <h3 className="txt1 to-upper">Other interesting features</h3>
-                  <p className="txt2">What Choose Me ?</p>
 
-                </div>
-
-                <br/>
+                <div className="title text-center" id="start-id">
+                  <h3 >Other interesting features</h3>
+                  <p >What Choose Me ?</p>
                 <div className="row">
                   {features.map(([index, feature]) =>
-                      <div key={index} className="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                        <div className="box box-14 text-center">
+                      <div key={index} className="box col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div className=" text-center">
                           <div className="icon_box">
                             <img height="100px" width="100px" src={feature.image} alt={feature.title} className="img-responsive img-fe"/>
                           </div>
@@ -45,11 +41,14 @@ class Service extends Component {
                   )}
 
                 </div>
-              </div>
-            </div>
-          </div>
+ 
 
+          </div>
+ </div>
+  
         </section>
+     
+      
     );
   }
 }

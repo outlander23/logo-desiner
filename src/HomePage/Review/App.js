@@ -37,12 +37,30 @@ function App() {
 
       <div className="container" id="testimonial">
 
-          <h2 className="testimonial-heading">What Clients Say About Me</h2>
+          <h2 className="testimonial-heading">What Clients Say About Me !</h2>
 
 
               <Swiper
                   spaceBetween={50}
                   slidesPerView={3}
+                  breakpoints={{
+                360: {
+                
+                  slidesPerView: 1,
+                },
+                500: {
+            
+                  slidesPerView: 1,
+                },
+                640: {
+           
+                  slidesPerView: 2,
+                },
+                1100: {
+       
+                  slidesPerView: 3,
+                },
+              }}
                   navigation
                   loop={{loop:true}}
                   autoplay={{delay: 3000}}

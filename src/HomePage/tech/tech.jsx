@@ -1,28 +1,18 @@
 import React, {Component} from "react";
 import "./new.css";
 import Logo from "./image-support.jpg"
-
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 class App extends Component {
   render() {
     return (
-        <div className="main_content">
-          {/*This section is for live chat
-          <div className="form-popup" id="myForm">
-            <form action="/action_page.php" className="form-container">
-              <h1>Login</h1>
+        <div className="main_content" id="tech">
 
-              <label htmlFor="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required />
 
-                <label htmlFor="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required />
+<MessengerCustomerChat
+    pageId="117189823741050"
+    appId="429031561679245"
 
-                  <button type="submit" className="btn">Login</button>
-                  <button type="submit" className="btn cancel" onClick="closeForm()">Close</button>
-            </form>
-          </div>
-          */}
-
+  />
           <div className="un-container">
 
             <div className="title ">

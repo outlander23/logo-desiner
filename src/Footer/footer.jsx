@@ -68,7 +68,7 @@ const Sidebar = () => {
         </div>
         }
 
-        <div className="social-contact-section">
+        <div className="social-contact-section" id="xxx">
           <div className="container">
             <div className="row">
               <div className="col-lg-4 col-md-12 order-2 order-md-2 order-sm-2 order-lg-1">

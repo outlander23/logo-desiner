@@ -31,8 +31,10 @@ function FeaturesSlides() {
   const works = [...bestWorks.entries()];
 
   return (
-      <section className="resip_section">
-        <div className="container">
+      <section className="resip_section " id="xxxxx">
+ <div className="container">
+
+
           <div className="col-md-12">
             <h2>My Some of my popular work</h2>
           </div>
@@ -41,21 +43,21 @@ function FeaturesSlides() {
               slidesPerView={3}
               navigation
               breakpoints={{
-                100: {
-                  width: 100,
+                360: {
+                
                   slidesPerView: 1,
                 },
                 500: {
-                  width: 500,
+            
                   slidesPerView: 1,
                 },
                 640: {
-                  width: 640,
-                  slidesPerView: 1,
-                },
-                768: {
-                  width: 768,
+           
                   slidesPerView: 2,
+                },
+                1100: {
+       
+                  slidesPerView: 3,
                 },
               }}
               autoplay={{delay: 3000}}
@@ -84,7 +86,8 @@ function FeaturesSlides() {
           <br/>
           <br/>
           <br/>
-        </div>
+ </div>
+
       </section>
   );
 }

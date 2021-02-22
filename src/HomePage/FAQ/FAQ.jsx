@@ -16,8 +16,8 @@ class FAQ extends Component {
   render() {
 
     return (
-        <div class="faqs gray-light-bg">
-          <div class="container">
+        <div class="faqs gray-light-bg" id="faq">
+         
 
 
        
@@ -54,7 +54,7 @@ class FAQ extends Component {
                 </div>
                 <a class="btn" href="">Have more questions?</a>
       
-            </div>
+    
           </div>
 
     );

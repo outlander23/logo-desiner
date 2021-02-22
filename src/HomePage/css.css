@@ -1,10 +1,10 @@
-#section-feature .box .icon_box {
+#section-feature #start-id .box .icon_box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 110px;
 }
-#section-feature .box {
+#start-id .box {
 	background: #ffffff;
 	text-align: center;
 	-webkit-box-shadow: 0px 0px 22.5px 2.5px rgba(0, 0, 0, 0.1);
@@ -12,20 +12,19 @@
 	box-shadow: 0px 0px 22.5px 2.5px rgba(0, 0, 0, 0.1);
 	height: 200px;
 	margin-bottom: 50px;
+	
+	padding: 30px;
+
 }
 
 
-.main_content .box {
-	position: relative;
-	margin-bottom: 80px;
-	transition: 0.3s;
-}
+
 #section-feature {
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
  #start-id .title .txt1 , #start-id .title p {
-	margin-bottom: 65px;
+	margin-bottom: 605px;
 	font-weight: 800px;
 	text-transform: uppercase;
 
@@ -58,3 +57,4 @@
 	transition: translateX(-10px);
 
 }
+

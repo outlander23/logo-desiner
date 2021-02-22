@@ -43,14 +43,14 @@ width: 350px;
 }
 #testimonial .swiper-button-next {
 
-  right: -10%;
+  right: -100%;
 
 
 }
 
 #testimonial .swiper-button-prev {
 
-  left: -10%;
+  left: -100%;
 
 
 }

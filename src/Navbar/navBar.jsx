@@ -18,7 +18,7 @@ class Navbar extends Component {
     const {bars} = this.state;
     return (
       <header>
-        <nav className="navbar navbar-expand-lg navbar-dark " id="navbar">
+        <nav className="navbar  navbar-dark " id="navbar">
           <div className="container">
             <a className="navbar-brand color-18" href="/home">
               <b>

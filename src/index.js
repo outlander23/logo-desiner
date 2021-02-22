@@ -8,7 +8,7 @@ import "./icomoon/style.css";
 import "font-awesome/css/font-awesome.css";
 import "./Css/fixed.css"
 import 'normalize.css';
-
+import "./Css/responsive.css"
 
 ReactDOM.render(
   <BrowserRouter>
