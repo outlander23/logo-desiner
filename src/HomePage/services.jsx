@@ -1,159 +1,57 @@
-import React, { Component } from 'react';
-import Logo from "./r5s.png"
+import React, {Component} from 'react';
 
 import "./css.css"
+import http from "../form/httpService";
+import {apiRoot} from "../constants";
+
 class Service extends Component {
+  state = {
+    features: []
+  }
 
-    render() {
-        return (
-            <section id="section-feature">
+  async componentDidMount() {
+    let res = await http.get(apiRoot + '/site-data/features/');
+    this.setState({features: res.data.data});
+  }
 
-            <div  class="section-heading-styles _mPS2id-t">
-                <div class="list-header">
+  render() {
+    const features = [...this.state.features.entries()];
+    return (
+        <section id="section-feature">
+          <div className="section-heading-styles _mPS2id-t">
+            <div className="list-header">
+              <div className="un-container text-center">
 
-                    <div class="un-container text-center">
-                        
-                            <div class="title" id="start-id">
-                                <h3 class="txt1 to-upper">Other interesting features</h3>
-                                <p class="txt2">What Choose Me  ?</p>
-                           
-                          </div>
+                <div className="title" id="start-id">
+                  <h3 className="txt1 to-upper">Other interesting features</h3>
+                  <p className="txt2">What Choose Me ?</p>
 
-<br />
-                          <div className="row">
-
-                            <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
-                                <div class="box box-14 text-center">
-                                    <div class="icon_box">
-                                        <img src={Logo} alt="Mega Menu" className="img-responsive img-fe"/>
-                                    </div>
-                                    <div class="text_box">
-                                        <div class="title_features">Mega Menu</div>
-                                        <div class="sub_title">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Asperiores, optio.</div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                           
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                    </div>
                 </div>
+
+                <br/>
+                <div className="row">
+                  {features.map(([index, feature]) =>
+                      <div key={index} className="col-lg-4 col-md-3 col-sm-2 col-xs-1">
+                        <div className="box box-14 text-center">
+                          <div className="icon_box">
+                            <img height="100px" width="100px" src={feature.image} alt={feature.title} className="img-responsive img-fe"/>
+                          </div>
+                          <div className="text_box">
+                            <div className="title_features">{feature.title}</div>
+                            <div className="sub_title">{feature.about}</div>
+                          </div>
+                        </div>
+                      </div>
+                  )}
+
+                </div>
+              </div>
             </div>
+          </div>
 
-            </section>
-
-
-                        
-                            
-
-                        
-         );
-    }
+        </section>
+    );
+  }
 }
 
 export default Service;

@@ -1,216 +1,231 @@
 .experience {
-  margin-left: 70px;
-  padding: 10px 0px;
-}
-#hire .btn-hire{
-  width: 150px;
-  color:#fff;
-  left: 50%;
+    margin-left: 70px;
+    padding: 10px 0px;
 }
 
-#about button{
-  color:#fff;
-  background: #892cdc;
-  margin: 10%;
-  margin-left: 100%;
-  right:50%;
-  border:2px solid #dfd;
-  width: 150px;
-  height: 50px;
-  border-radius: 10%;
-  transform: .15s;
+#hire .btn-hire {
+    width: 150px;
+    color: #fff;
+    background-color: #4c9cef;
+    left: 50%;
+}
+
+#about button {
+    color: #fff;
+    background: #892cdc;
+    margin: 10%;
+    margin-left: 100%;
+    right: 50%;
+    border: 2px solid #dfd;
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+    transform: .15s;
 
 }
-#about button:hover{
-  color:#fff;
-  background: #000;
+
+#about button:hover {
+    color: #fff;
+    background: #000;
 
 
 }
+
 .experience-container {
-  position: relative;
-  margin: 40px 0px;
+    position: relative;
+    margin: 40px 0px;
 }
 
 .experience-circle {
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  line-height: 35px;
-  font-size: 14px;
-  border-radius: 100%;
-  position: absolute;
-  left: -60px;
-  color: #fff;
-  padding-top: 25px;
-  box-shadow: -5px 6px 4px 0px rgba(90, 91, 95, 0.3);
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 100%;
+    position: absolute;
+    left: -60px;
+    color: #fff;
+    padding-top: 25px;
+    box-shadow: -5px 6px 4px 0px rgba(90, 91, 95, 0.3);
 }
 
 .experience-circle i {
-  display: block;
-  font-size: 40px;
+    display: block;
+    font-size: 40px;
 }
 
 .experience-company i {
-  font-size: 40px !important;
-  margin-top: 15px !important;
+    font-size: 40px !important;
+    margin-top: 15px !important;
 }
 
 .experience-circle p {
-  font-size: 11px;
-  margin-top: 5px;
+    font-size: 11px;
+    margin-top: 5px;
 }
 
 .experience-content {
-  margin-left: 80px;
-  position: relative;
-  background: #fff;
-  border: 2px solid #f7639a;
-  border-radius: 6px;
-  padding: 20px 25px;
+    margin-left: 80px;
+    position: relative;
+    background: #fff;
+    border: 2px solid #f7639a;
+    border-radius: 6px;
+    padding: 20px 25px;
 }
 
 .experience-content h4 {
-  line-height: 30px;
+    line-height: 30px;
 }
 
-.experience-content:after, 
+.experience-content:after,
 .experience-content:before {
-  right: 100%;
-  top: 35%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+    right: 100%;
+    top: 35%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
 }
 
 .experience-content:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-right-color: #ffffff;
-  border-width: 12px;
-  margin-top: -20px;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 12px;
+    margin-top: -20px;
 }
 
 .experience-content:before {
-  border-color: rgba(238, 238, 238, 0);
-  border-right-color: #f7639a;
-  border-width: 16px;
-  margin-top: -21px;
+    border-color: rgba(238, 238, 238, 0);
+    border-right-color: #f7639a;
+    border-width: 16px;
+    margin-top: -21px;
 }
 
 
 @media screen and (min-width: 1001px) {
-  div.example {
-    font-size: 40px;
-  }
-  .icon-container p{
-		font-size :30 px;
-	}
-	.sp-box  contact-us about-me-text p{
-	font-size :30 px;
-	}
- p.xxx{
- font-size :30 px;
- }
+    div.example {
+        font-size: 40px;
+    }
+
+    .icon-container p {
+        font-size: 30px;
+    }
+
+    .sp-box contact-us about-me-text p {
+        font-size: 30px;
+    }
+
+    p.xxx {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-  div.example {
-    font-size: 20px;
-  }
-  .icon-container p{
-		font-size :12 px;
-	}
-	.sp-box  contact-us about-me-text p{
-	font-size :12 px;
-	}
-	p.xxx{
- font-size :12 px;
- }
+    div.example {
+        font-size: 20px;
+    }
+
+    .icon-container p {
+        font-size: 12px;
+    }
+
+    .sp-box contact-us about-me-text p {
+        font-size: 12px;
+    }
+
+    p.xxx {
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 1001px) {
-  .experience-content h3 {
-    font-size: 22px;
-  }
-  .experience-content p {
-    font-size: 20px;
-  }
-  .experience-content span {
-    font-size: 20px;
-  }
-  p.color-20{
-  font-size: 30px;
-  }
-  div.col testimonial-container  owl-item testimonial-carousel-list m-4 p.color-20{
-  font-size: 30px;
-  }
-  
-  
-  
+    .experience-content h3 {
+        font-size: 22px;
+    }
+
+    .experience-content p {
+        font-size: 20px;
+    }
+
+    .experience-content span {
+        font-size: 20px;
+    }
+
+    p.color-20 {
+        font-size: 30px;
+    }
+
+    div.col testimonial-container owl-item testimonial-carousel-list m-4 p.color-20 {
+        font-size: 30px;
+    }
+
+
 }
 
 @media screen and (max-width: 1000px) {
-  .experience-content h3 {
-    font-size: 13px;
-  }
-  .experience-content p {
-    font-size: 12px;
-  }
-  .experience-content span {
-    font-size: 11px;
-  }
-   p.color-20{
-  font-size: 10px;
-  }
-  div.col testimonial-container  owl-item testimonial-carousel-list m-4 p.color-20{
-  font-size: 10px;
-  }
-  
+    .experience-content h3 {
+        font-size: 13px;
+    }
+
+    .experience-content p {
+        font-size: 12px;
+    }
+
+    .experience-content span {
+        font-size: 11px;
+    }
+
+    p.color-20 {
+        font-size: 10px;
+    }
+
+    div.col testimonial-container owl-item testimonial-carousel-list m-4 p.color-20 {
+        font-size: 10px;
+    }
+
 }
 
 @media screen and (min-width: 1001px) {
-  div.table-responsive {
-    font-size: 20px;
-  }
+    div.table-responsive {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-  div.table-responsive {
-    font-size: 12px;
-  }
+    div.table-responsive {
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 1001px) {
-  .sp-box p{
-    font-size: 12px;
-  }
+    .sp-box p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-  .sp-box p{
-    font-size: 20px;
-  }
+    .sp-box p {
+        font-size: 20px;
+    }
 }
-
-
 
 
 @media only screen and (max-width: 1199px) {
-	.sp-box i {
-		font-size: 30px;
-	}
-	
-	.sp-box{
-		margin-left: 75px;
-	}
-	
-	.sp-box:after, 
-	.sp-box:before {
-		top: 30%;
-	}
+    .sp-box i {
+        font-size: 30px;
+    }
+
+    .sp-box {
+        margin-left: 75px;
+    }
+
+    .sp-box:after,
+    .sp-box:before {
+        top: 30%;
+    }
 }
 
 
@@ -219,62 +234,62 @@
         padding: 30px 11px;
         font-size: 12px;
     }
-    
-	.navigation-background .navigation-menu .navbar-nav li a {
+
+    .navigation-background .navigation-menu .navbar-nav li a {
         padding: 30px 11px;
         font-size: 12px;
     }
-	
-	.navigation-background .logo {
-		padding-top: 28px;
-	}
-	
-	.margin-left-setting {
-		margin-left: 0px !important;
-	}
+
+    .navigation-background .logo {
+        padding-top: 28px;
+    }
+
+    .margin-left-setting {
+        margin-left: 0px !important;
+    }
 }
 
 
 @media only screen and (max-width: 991px) {
-     .bg-fixed h2 {
+    .bg-fixed h2 {
         font-size: 20px;
-	 }
+    }
 }
 
 
 @media only screen and (max-width: 767px) {
-   
-    
-	.section-title h2 {
+
+
+    .section-title h2 {
         font-size: 22px;
     }
-    
-	.testimonial-word {
+
+    .testimonial-word {
         padding: 0;
     }
-    
-	.testimonial-carousel-list {
+
+    .testimonial-carousel-list {
         margin-top: 0px;
     }
-    
-	.bg-fixed h2 {
+
+    .bg-fixed h2 {
         font-size: 18px;
         line-height: 35px;
-	}
-    
-	.contact-us-detail {
+    }
+
+    .contact-us-detail {
         left: 39%;
     }
-    
-	.owl-prev {
+
+    .owl-prev {
         left: 5px;
     }
-    
-	.owl-next {
+
+    .owl-next {
         right: 5px;
     }
-    
-	.scroll-to-top {
+
+    .scroll-to-top {
         width: 45px !important;
         height: 45px !important;
         font-size: 20px !important;
@@ -286,126 +301,131 @@
 
 
 @media only screen and (max-width: 555px) {
-	.social-icon li a {
-         width: 40px;
-         height: 40px;
-         line-height: 44px;
-         font-size: 16px;
-      }
-      h1 {
-      	 font-size: 12px;
-      }
-	  
-     .section-title h2 {
-         font-size: 16px;
-		 font-weight: 500;
-       }
-	 
-      .section-title p {
-         font-weight: 300;
-         font-size: 12px;
-      }
-	  
-	  .statistics-content > h5 {
+    .social-icon li a {
+        width: 40px;
+        height: 40px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .section-title p {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .statistics-content > h5 {
         font-size: 20px;
-      }
-	  
-      .statistics-content > span {
+    }
+
+    .statistics-content > span {
         font-size: 10px;
-      }
-	  
-      .statistics-icon {
+    }
+
+    .statistics-icon {
         font-size: 30px;
-      }
-	  
-      .services-section hr {
-          width: 35px;
-      }
-	  
-	  .services-section h3 {
-          font-size: 12px;
-      }
+    }
 
-      .services-section .sp-circle {
-          width: 180px;
-          height: 180px;
-      }
+    .services-section hr {
+        width: 35px;
+    }
 
-      .services-section .sp-circle i {
-          font-size: 30px;
-          margin-top: 45px;
-      }
-	  
-      .owl-theme .owl-controls .owl-buttons div {
-          padding: 6px 10px;
-          width: 40px;
-          height: 40px;
-          line-height: 36px;
-		  font-size: 8px;
-       }
-	   
-      .contact-us-detail {
-          left: 30%;
-       }
+    .services-section h3 {
+        font-size: 12px;
+    }
+
+    .services-section .sp-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .services-section .sp-circle i {
+        font-size: 30px;
+        margin-top: 45px;
+    }
+
+    .owl-theme .owl-controls .owl-buttons div {
+        padding: 6px 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 36px;
+        font-size: 8px;
+    }
+
+    .contact-us-detail {
+        left: 30%;
+    }
 }
 
 
 @media only screen and (max-width: 500px) {
-	.experience {
-		margin-left: 0px;
-		border: 0px;
-	}
-.experience-content:after, 
-.experience-content:before {
+    .experience {
+        margin-left: 0px;
+        border: 0px;
+    }
 
-  border: solid transparent;
+    .experience-content:after,
+    .experience-content:before {
 
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-	.experience-circle {
-		margin: 0 auto;
-		position: static;
-		margin-bottom: 20px;
-	}
-	
-	.sp-box {
-		padding: 10px 15px;
-		margin-left: 0px;
-		text-align: center;
-    border: 1px solid #000;
-	}
-	
-	.sp-box:after, 
-	.sp-box:before {
-		display: none;
-	}
-	
-	
+        border: solid transparent;
+
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .experience-circle {
+        margin: 0 auto;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .sp-box {
+        padding: 10px 15px;
+        margin-left: 0px;
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    .sp-box:after,
+    .sp-box:before {
+        display: none;
+    }
+
+
 }
 
 
 @media only screen and (max-width: 449px) {
-	   .button {
-		   font-size: 13px;
-		   padding: 14px 28px;
-		   font-weight: 600;
-	   }
-	   .experience-content:after, 
-.experience-content:before {
+    .button {
+        font-size: 13px;
+        padding: 14px 28px;
+        font-weight: 600;
+    }
 
-  border: solid transparent;
+    .experience-content:after,
+    .experience-content:before {
 
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-	   .sp-box {
-          left: 25%;
-       }
+        border: solid transparent;
+
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .sp-box {
+        left: 25%;
+    }
 }
 
 

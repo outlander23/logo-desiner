@@ -1,30 +1,31 @@
-import React, { Component } from "react";
-import HeaderSlider from "./HeaderSlider/headerSlider";
+import React from "react";
+import SliderBox from "./HeaderSlider/slider";
 import FeaturesSlides from "./FeatureSliders/feature";
-import SomeWorks from "./SomeWorks/feature";
 import Review from "./Review/App";
 import FAQ from "./FAQ/FAQ";
 import BgFix from "./FixBg/fixed";
 import News from "./Newsletter/Newsletter";
 import Service from "./services";
 import Tech from "./tech/tech";
-import Sttt from "./Start/start"
-function HomePage(argument) {
-  return (
-    <>
-      <HeaderSlider />
-      <FeaturesSlides />
+import HireNow from "./Start/hireNow"
 
-      <Service />
-       <Sttt />
-      <Tech/ >
-      <FAQ />
-      <BgFix />
-      <Review />
-     
-      <News />
-      
-    </>
+function HomePage() {
+  return (
+      <React.Fragment>
+        <SliderBox/>
+        <FeaturesSlides/>
+
+        <Service/>
+        <HireNow/>
+        <Tech/>
+        <FAQ/>
+        <BgFix/>
+        <Review/>
+
+        <News/>
+
+      </React.Fragment>
   );
 }
+
 export default HomePage;

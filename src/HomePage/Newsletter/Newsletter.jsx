@@ -1,15 +1,30 @@
-import React, { Component } from "react";
+import React, {useState} from "react";
 import "./news.css";
-class News extends Component {
-  render() {
-    return (
+import http from "../../form/httpService";
+import {apiRoot} from "../../constants";
+import {toast} from "react-toastify";
+
+const News = () => {
+  const [email, setEmail] = useState('');
+
+  const handleChange = ({currentTarget: input}) => {
+    setEmail(input.value);
+  }
+
+  const submit = () => {
+    http.post(apiRoot + '/subscribe/', {'email': email});
+    setEmail('');
+    toast.success('Thanks for subscribing');
+  }
+
+  return (
       <div className="newsletter-section pb-50  pt-50 " id="newsletter-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 mb-sm-20 mb-xs-20">
               <div class="newsletter-title">
                 <h1>
-                  <span className="icon-mail2 color-2" />
+                  <span className="icon-mail2 color-2"/>
                   Send Newsletter
                 </h1>
               </div>
@@ -21,27 +36,19 @@ class News extends Component {
                   Sign up for our newsletter to receive updates and Exclusive
                   offers
                 </p>
+
                 <div class="subscription-form">
-                  <form
-         
-                    class="mc-form subscribe-form"
-                  >
-                    <input
-                      type="hidden"
-                     
-                    />
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Your email address"
-                    />
-                    <button type="submit"> subscribe!</button>
+                  <form class="mc-form subscribe-form">
+                    <input type="hidden"/>
+                    <input value={email} onChange={handleChange} type="email" name="email"
+                           placeholder="Your email address"/>
+                    <button type="submit" onClick={submit}> subscribe!</button>
                   </form>
 
                   <div class="mailchimp-alerts">
-                    <div class="mailchimp-submitting"></div>
-                    <div class="mailchimp-success"></div>
-                    <div class="mailchimp-error"></div>
+                    <div class="mailchimp-submitting"/>
+                    <div class="mailchimp-success"/>
+                    <div class="mailchimp-error"/>
                   </div>
                 </div>
               </div>
@@ -49,7 +56,7 @@ class News extends Component {
           </div>
         </div>
       </div>
-    );
-  }
+  );
 }
+
 export default News;
