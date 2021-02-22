@@ -290,17 +290,17 @@
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
      #special-footer h3 {
-         font-size: 17px;
+         font-size: 22px;
          font-weight: 700;
      }
 
      #special-footer .footer-top p {
-         font-size: 12px;
+         font-size: 16px;
          font-weight: 200;
      }
 
      #special-footer .footer-top {
-         padding: 100px 0 80px 0;
+         padding: 150px 0 80px 0;
 
      }
 
@@ -311,13 +311,13 @@
 
      #section-feature p {
 
-         font-size: 14px;
+         font-size: 17px;
      }
 
      #tech .title p {
          margin-bottom: 0px;
          font-weight: 100px;
-         font-size: 12px;
+         font-size: 17px;
 
 
      }
@@ -331,11 +331,11 @@
      }
 
      #faq .card-header a {
-         font-size: 14px;
+         font-size: 17px;
      }
 
      #faq .card-body {
-         font-size: 13px;
+         font-size: 16px;
 
      }
 
@@ -348,31 +348,31 @@
      }
 
      #testimonial .testimonial-heading {
-         font-size: 20px;
+         font-size: 26px;
      }
 
      #testimonial .client-info h5 {
-         font-size: 12px;
+         font-size: 16px;
      }
 
      #testimonial .testimonial-single p {
-         font-size: 12px;
+         font-size: 16px;
 
      }
 
      #testimonial .item {
-         font-size: 12px;
+         font-size: 16px;
          width: 300px;
          font-weight: 400px;
      }
 
      #section-feature .title p {
-         font-size: 14px;
+         font-size: 18px;
          margin-bottom: 20px;
      }
 
      #section-feature .title h3 {
-         font-size: 14px;
+         font-size: 16px;
          text-transform: uppercase;
          margin-bottom: 10px;
      }
@@ -381,7 +381,7 @@
      p,
      h2,
      h3 {
-         font-size: 16px;
+         font-size: 20px;
      }
 
      #newsletter-section #small-20 {
@@ -394,7 +394,7 @@
      }
 
      #subscription-form from {
-         padding-top: 40px;
+         padding-top: 60px;
      }
 
      .slider-btn {
