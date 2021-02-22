@@ -54,9 +54,9 @@ function App() {
                       <div class="box-review" >
     <div class="item">
         <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-            <blockquote>
+            <p>
                 {review.message}
-            </blockquote>
+            </p>
             <div class="client-img d-flex align-items-center justify-content-between pt-4">
                 <div class="d-flex align-items-center">
                     <img  alt={review.name} class="img-fluid rounded-circle shadow-sm mr-3" src={review.image} width="50"/>
