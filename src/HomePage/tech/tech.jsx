@@ -2,8 +2,20 @@ import React, {Component} from "react";
 import "./new.css";
 import Logo from "./image-support.jpg"
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import http from "../../form/httpService";
+import {apiRoot} from "../../constants";
 class App extends Component {
+  state = {
+        aboutMe: []
+    }
+
+    async componentDidMount() {
+        let res = await http.get(apiRoot + '/site-data/about_me/');
+        this.setState({aboutMe: res.data.data});
+    }
+ 
   render() {
+    const { email,fiverr} = this.state.aboutMe;
     return (
         <div className="main_content" id="tech">
 
@@ -35,15 +47,15 @@ class App extends Component {
                   <div className="iteam-support">
                     <span className="icon-mail color-3" />
                     <h4>Email</h4>
-                    <p>posthemes@gmail.com</p>
+                    <p>{email}</p>
                   </div>
                   <div className="iteam-support">
-                    <span className="icon-browser color-3" />
-                    <h4>Website</h4>
-                    <p><a href="http://posthemes.com">http://posthemes.com</a></p>
+                    <span className="icon-chat color-3" />
+                    <h4>Live Chat </h4>
+                    <p>Mon-Fri / 8am-12pm (GMT+6)</p>
                   </div>
                 </div>
-                <button className="contact_now"><span className="icon-chat"/>Live Chat now</button>
+                
               </div>
             </div>
 

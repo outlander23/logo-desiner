@@ -6,12 +6,12 @@ class Navlist extends Component {
     const { label, link } = this.props;
 
     return (
-      <li className="nav-item nav-link">
+      <li className="nav-link text-light">
         <Link
    
           to={link}
         >
-          <span>{label}</span>
+          <span className="btn btn-dark color-white"> {label}</span>
         </Link>
       </li>
     );

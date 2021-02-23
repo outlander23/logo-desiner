@@ -105,10 +105,11 @@ class Pagination extends React.Component {
     return (
         <ul className="pagination">
           <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-            <button className="btn" onClick={() => this.setPage(1)}>First</button>
+            <button className={pager.currentPage === 1 ? 'btn bg-primary' : 'btn'} onClick={() => this.setPage(1)}>First</button>
           </li>
           <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-            <button className="btn " onClick={() => this.setPage(pager.currentPage - 1)}>Previous</button>
+            <button className="btn" onClick={() => this.setPage(pager.currentPage - 1)}>
+            <span className="icon-previous2"></span></button>
           </li>
           {pager.pages.map((page, index) =>
               <li key={index} className={pager.currentPage === page ? 'active' : ''}>
@@ -118,11 +119,11 @@ class Pagination extends React.Component {
           )}
           <li>
             <button className="btn" disabled={pager.currentPage === pager.totalPages ? 'disabled' : ''}
-                    onClick={() => this.setPage(pager.currentPage + 1)}>Next
+                    onClick={() => this.setPage(pager.currentPage + 1)}><span className="icon-next2"></span>
             </button>
           </li>
           <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
-            <button className="btn" onClick={() => this.setPage(pager.totalPages)}>Last</button>
+            <button className={pager.currentPage === pager.totalPages ? 'btn bg-primary' : 'btn'} onClick={() => this.setPage(pager.totalPages)}>Last</button>
           </li>
         </ul>
     );

@@ -17,8 +17,8 @@ class Navbar extends Component {
   render() {
     const {bars} = this.state;
     return (
-      <header>
-        <nav className="navbar  navbar-dark " id="navbar">
+
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top " >
           <div className="container">
             <a className="navbar-brand color-18" href="/home">
               <b>
@@ -44,7 +44,7 @@ class Navbar extends Component {
             </div>
           </div>
         </nav>
-      </header>
+
     );
   }
 }

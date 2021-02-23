@@ -21,11 +21,14 @@ SwiperCore.use([Navigation, Pagination, A11y, EffectFade, Autoplay]);
 
 function SliderBox() {
   const [sliders, setSliders] = useState([]);
+  const [fiverr, setFiverr] = useState('');
 
   useEffect(() => {
     const getUrl = async () => {
       let res = await http.get(apiRoot + '/site-data/sliders/');
       setSliders(res.data.data);
+      res = await http.get(apiRoot + '/site-data/about_me/');
+      setFiverr(res.data.data.fiverr);
     }
     getUrl();
   });
@@ -46,7 +49,7 @@ function SliderBox() {
                     <div class="slider_cont">
                       <h3 className="text-dark">{slider.title}</h3>
                       <p>{slider.text}</p>
-                      <a class="main_bt_border text-dark bg-primary" href={slider.url}>
+                      <a class="main_bt_border text-dark bg-primary" href={fiverr}>
                         Order Now
                       </a>
                     </div>

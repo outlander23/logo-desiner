@@ -18,14 +18,14 @@ const Sidebar = () => {
   const {email, phone, address} = aboutMe;
 
   return (
-      <footer>
+      <footer id="ask-more-ques" >
         {email && <div className=" bg-color-3 color-white ">
           <br/>
           <div className="container ">
             <div className="container mt-4 mb-4">
               <div className="row">
                 <div className="col-md-12 mb-5">
-                  <div className="section-heading text-center">
+                  <div className="section-heading text-center" >
                     <h2>
                       Get <strong>In Touch</strong>
                     </h2>

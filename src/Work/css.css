@@ -1,58 +1,25 @@
-.services-section {
-  background-color: #F9F9F9;
+#gallery-top{
+	padding-top: 2%;
 }
 
-
-.services-section hr {
-  
-  width: 42px;
-  margin: 0 auto;
-}
-#box144{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background: dark;
-}
-
-.box-14{
-  border:2px solid #892cdc;
-  text-align: left;
-  padding: 10px;
-  background: #eee;
+#gallery-thumbs img{
+	height: 10vh;
+	width: auto;
 
 }
+#gallery-top-swiper img{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  	width: auto;
 
-
-.services-section .sp-circle i {
-   font-size: 42px;
-   margin-top: 88px;
-   display: inline-block;
-   vertical-align: middle;
+	height: 80vh;
+	align-items: center;
 }
-.font-50{
-  font-size: 100px;
-}
-
-.img-container {
-  width: 100%; /* three containers (use 25% for four, and 50% for two, etc) */
-  padding: 5px; /* if you want space between the images */
-}
-.starts{
-  background: green;
-  border-radius: 2px;
-  margin: 2px;
-  display: inline;
-  font-size: 10px;
-  color:white;
-  font-size: 20px;
-  margin: 10px;
-  margin-bottom: 20px;
-
-}
-.details{
-  background: #999323;
-  padding-top: 10px;
-  margin-top: 10px;
-  text-align: left;
-
+#gallery-thumbs{
+	display: block;
+	  margin-left: auto;
+  	margin-right: auto;
+	align-items: center;
+	
 }

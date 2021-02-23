@@ -12,7 +12,6 @@
 	box-shadow: 0px 0px 22.5px 2.5px rgba(0, 0, 0, 0.1);
 	height: 200px;
 	margin-bottom: 50px;
-	
 	padding: 30px;
 
 }
@@ -53,8 +52,8 @@
 
 .box:hover img{
 	opacity: .85;
-	padding-bottom: 15px;
-	transition: translateX(-10px);
+	padding-top: 15px;
+	transition: translateX(10px);
 
 }
 

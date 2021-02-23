@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import "./faq.css";
+
+import { Link, animateScroll as scroll } from "react-scroll";
 import http from "../../form/httpService";
 import {apiRoot} from "../../constants";
 
@@ -52,7 +54,16 @@ class FAQ extends Component {
 
 
                 </div>
-                <a class="btn" href="">Have more questions?</a>
+                <Link 
+              activeClass="active" 
+        to="ask-more-ques" 
+        spy={true} 
+        smooth={true} 
+        duration={1000}>
+
+                <a class="btn" href="#ask-more-ques">Have more questions?</a>
+        </Link>
+                
       
     
           </div>

@@ -1,78 +1,82 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
+import 'swiper/swiper-bundle.css';
+import Logo from "./roberta-zanlucchi-AttlcHoVot0-unsplash.jpg"
+import Logo2 from "./daniel-olah-LHDPiqcOGLI-unsplash.jpg"
+import "./css.css"
+SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
 
-import Logo from "./rs5.png"
-import "./css.css";
-import http from "../form/httpService";
-import {apiRoot} from "../constants";
-import Pagination from "../form/pagination";
-
-const Service = () => {
-  const [works, setWorks] = useState([]);
-  const [page, setPage] = useState(1);
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const getUrl = async () => {
-      let res = await http.get(`${apiRoot}/works/?limit=9&offset=${(page - 1) * 9}`);
-      setWorks(res.data.results);
-      setCount(res.data.count);
-    }
-    getUrl();
-  }, [page]);
-
-  const onChangePage = (page) => {
-    // update state with new page of items
-    setPage(page)
-  }
+function App() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [controlledSwiper, setControlledSwiper] = useState(null);
   return (
 
-      <section className="site-section dark" id="services">
+    <div id="gallery-top">
+    <br />
+      <Swiper
+        id="gallery-top-swiper"
+        thumbs={{ swiper: thumbsSwiper }}
+        tag="section"
+        navigation
+        pagination
+        spaceBetween={0}
+        slidesPerView={1}
+     
+      >
+        <SwiperSlide>
+          <img src={Logo} id="special-image" className=" mt-4 rounded d-block  img-fluid" />
 
-        <div className="container">
-          <br/> <br/> <br/><br/> <br/> <br/>
+        </SwiperSlide>
 
-          <div className="row mb-4">
-            <div className="col-md-12">
-              <div className="section-heading green text-center">
+        <SwiperSlide>
+          <img src={Logo} id="special-image" alt="" className=" mt-4 rounded mx-auto d-block img-responsive  img-fluid" />
 
-                <h1><strong>ALl of my works</strong></h1>
+        </SwiperSlide>
 
-                <div className="statistics-icon statistics-content "><i className="icon-fire  "/></div>
+        <SwiperSlide>
+          <img src={Logo2} id="special-image" alt="" className=" mt-4 rounded mx-auto d-block img-responsive  img-fluid" />
 
+        </SwiperSlide>
 
-              </div>
-            </div>
-          </div>
+        <SwiperSlide>
+          <img src={Logo} id="special-image" alt="" className=" mt-4 rounded mx-auto d-block img-responsive  img-fluid"  />
 
-          <div className="row">
+        </SwiperSlide>
 
-            {works.map(work =>
-                <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1" id="box144">
-                  <div class="box text-center">
-                    <div class="img-container">
-                      <img src={Logo} alt="Mega Menu" className="img-responsive img-fe" width="200"/>
-                    </div>
-                    <div className="box-14">
+      </Swiper>
 
-                      <div class="text_box">
-                        <div class="title_features">{work.name}</div>
-                        <div class="sub_title">{work.about}</div>
-                      </div>
-                      {[...Array(work.rating).keys()].map(() => <span className="icon-star"/>)}
-                    </div>
-                  </div>
-                </div>
-            )}
-          </div>
+      <Swiper
+      className="container"
+        id="gallery-thumbs"
+        spaceBetween={5}
+        slidesPerView={15}
+        onSwiper={setThumbsSwiper}
+      >
+       <SwiperSlide>
+          <img src={Logo} alt="" className="gallery-thumbs mt-4 rounded mx-auto d-block img-responsive  img-fluid" />
 
-          {/*# Pagination goes here*/}
-          <Pagination numItems={count} pageSize={12} onChangePage={onChangePage}/>
-        </div>
-        <br/> <br/> <br/>
+        </SwiperSlide>
 
-      </section>
+        <SwiperSlide>
+          <img src={Logo} alt="" className="gallery-thumbs mt-4 rounded mx-auto d-block img-responsive  img-fluid" />
 
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Logo2} alt="" className="gallery-thumbs mt-4 rounded mx-auto d-block img-responsive  img-fluid" />
+
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Logo} alt="" className="gallery-thumbs mt-4 rounded mx-auto d-block img-responsive  img-fluid" />
+
+        </SwiperSlide>
+      </Swiper>
+
+<br />
+    </div>
   );
 }
 
-export default Service;
+export default App;

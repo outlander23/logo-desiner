@@ -37,7 +37,7 @@ function App() {
 
       <div className="container" id="testimonial">
 
-          <h2 className="testimonial-heading">What Clients Say About Me !</h2>
+          <h2 className="testimonial-heading">What Clients Say About Me ?</h2>
 
 
               <Swiper
@@ -72,10 +72,6 @@ function App() {
                       <div class="box-review" >
     <div class="item">
         <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-            <p>
-                {review.message}
-            </p>
-            <div class="client-img d-flex align-items-center justify-content-between pt-4">
                 <div class="d-flex align-items-center">
                     <img  alt={review.name} class="img-fluid rounded-circle shadow-sm mr-3" src={review.image} width="50"/>
 
@@ -86,6 +82,7 @@ function App() {
                         </div>
                     
                 </div>
+            <div class="client-img d-flex align-items-center justify-content-between pt-3 pb-2">
                 <div class="client-ratting">
                     <ul class="list-inline client-ratting-list">
                         <li class="list-inline-item">
@@ -117,6 +114,9 @@ function App() {
                     </span>
                 </div>
             </div>
+            <p>
+                {review.message}
+            </p>
         </div>
     </div>
 </div>

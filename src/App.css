@@ -4,8 +4,8 @@
 }
 
 
-header {
-  min-height: 50px;
+nav {
+  min-height: 40px;
   background: #212020;
   padding: 15px 0;
   position: fixed;
@@ -13,11 +13,10 @@ header {
   top: 0;
   left: 0;
   z-index: 998;
+ 
 }
 
-header .container-fluid {
-  max-width: 1850px;
-}
+
 
 .right_header_info {
   width: 100%;
